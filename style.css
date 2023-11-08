@@ -1,0 +1,54 @@
+
+body {
+	display: grid;
+	gap: 10px;
+	grid-template-areas:
+        "da da pb"
+        "da da ch"
+        "da da af";
+}
+
+.dashboard {
+	display: grid;
+	grid-template-columns: 100px 300px;
+	grid-template-rows: 100px 300px;
+    grid-template-areas:
+        "pr cl"
+        "ex sc";
+	grid-area: da;
+	gap: 10px;
+}
+
+.profile {
+	background-color: red;
+	border-radius: 50%;
+    grid-area: pr;
+}
+.schedule-table {
+	background-color: orange;
+    grid-area: sc;
+}
+.exercise-table {
+	background-color: yellow;
+    grid-area: ex;
+}
+
+ /* CALOLRIES  */
+
+.calories {
+	background-color: green;
+    grid-area: cl;
+}
+.personal-bests {
+	background-color: skyblue;
+	grid-area: pb;
+}
+
+.challenges {
+	background-color: blue;
+	grid-area: ch;
+}
+.activity-feed {
+	background-color: purple;
+	grid-area: af;
+}
